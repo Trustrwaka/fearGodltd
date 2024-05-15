@@ -1,0 +1,148 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Login Section */
+.login-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  height: 450px;
+  margin-left: 400px ;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+.login-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-form .links {
+  margin-top: 120px;
+
+}
+
+.login-form .links a {
+  color: #666;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.images {
+  display: flex;
+  margin-right: 130px;
+}
+
+.images img {
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: irem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 5000px;
+    margin:0 auto;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  height: 70px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  /* Add styles for your social media icons */
+}
+a{
+
+  color: aliceblue;
+}
+a:active{
+
+  color: blue;
+}

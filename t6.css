@@ -1,0 +1,182 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.sort-by label {
+    margin-right: 10px;
+}
+
+.sort-by select {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 60px 40px;
+}
+
+.product-item {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price-and-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price-and-quantity .price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price-and-quantity input {
+    width: 50px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe input {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.subscribe button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 200px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}

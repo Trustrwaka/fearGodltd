@@ -1,0 +1,174 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.account-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.categories {
+  display: flex;
+  margin: 10px 0;
+}
+
+.categories a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.actions a {
+  margin-left: 10px;
+  color: #333;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #666;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-gallery {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.main-image img {
+  max-width: 100%;
+  margin-left: 200px;
+}
+
+.thumbnails {
+  display: flex;
+  margin-top: -575px;
+  flex-direction: column;
+  margin-left: 100px;
+  
+}
+
+.thumbnails img {
+  max-width: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.rating {
+  color: #ffc107;
+  margin-left: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.buy-now,
+.add-to-cart,
+.favorite {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.favorite {
+  background-color: transparent;
+  color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: irem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 5000px;
+    margin:0 auto;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  height: 70px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.social-icons {
+  /* Add styles for your social media icons */
+}

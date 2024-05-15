@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear God Ltd - Products</title>
+    <link rel="stylesheet" href="t6.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="t4.html">Home</a></li>
+                <li><a href="t3.html" class="active">sample</a></li>
+           
+            </ul>
+        </nav>
+        <div class="sort-by">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="price">Price</option>
+                <option value="color">color</option>
+                <option value="size">size</option>
+                <option value="date">date</option>
+
+               
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-grid">
+            
+        </section>
+
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Fear God Ltd is dedicated to providing high-quality furniture that elevates your living space. We strive to blend luxury with comfort, creating pieces that stand the test of time.</p>
+        </section>
+
+        <section class="subscribe">
+            <h2>Subscribe for updates</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="twitter">Twitter</a>
+            <a href="#" class="instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Generate product items dynamically
+        const productsData = [
+            { image: '1.PNG', title: 'Sofa', price: '$2 / each', sale: true },
+            { image: '2.PNG', title: 'Office Chair', price: '$8 / each', sale: false },
+            { image: '3.PNG', title: 'Bedframe', price: '$199.9 / each', sale: false },
+            { image: '4.PNG', title: 'Desk', price: '$129.9 / each', sale: false },
+            { image: '5.PNG', title: 'Cup Holder', price: '$49.99 / each', sale: false },
+            { image: '6.PNG', title: 'Dining table', price: '$149.9 Quality', sale: false },
+            { image: '7.PNG', title: 'Reading Table', price: '$599 per', sale: false },
+            { image: '8.PNG', title: 'Modern coffee table', price: '$1 each', sale: false },
+            { image: '9.PNG', title: 'Luxurious king-size bed', price: '$899 per', sale: false },
+            { image: '10.PNG', title: 'Spacious wardrobe unit', price: '$499 each', sale: false },
+            { image: '11.PNG', title: 'Bookshelf', price: '$129 Lorem', sale: false }
+        ];
+
+        const productsGrid = document.querySelector('.products-grid');
+
+        productsData.forEach(product => {
+            const productItem = document.createElement('div');
+            productItem.classList.add('product-item');
+
+            // Create product image
+            const productImage = document.createElement('img');
+            productImage.src = product.image;
+            productImage.alt = product.title;
+            productItem.appendChild(productImage);
+
+            // Create product info
+            const productInfo = document.createElement('div');
+            productInfo.classList.add('product-info');
+
+            const productTitle = document.createElement('h3');
+            productTitle.textContent = product.title;
+            productInfo.appendChild(productTitle);
+
+            const priceAndQuantity = document.createElement('div');
+            priceAndQuantity.classList.add('price-and-quantity');
+
+            const productPrice = document.createElement('span');
+            productPrice.classList.add('price');
+            productPrice.textContent = product.price;
+            priceAndQuantity.appendChild(productPrice);
+
+            const productQuantity = document.createElement('input');
+            productQuantity.type = 'number';
+            productQuantity.value = '1';
+            productQuantity.min = '1';
+            priceAndQuantity.appendChild(productQuantity);
+
+            productInfo.appendChild(priceAndQuantity);
+
+            if (product.sale) {
+                const saleTag = document.createElement('div');
+                saleTag.classList.add('sale');
+                saleTag.textContent = 'Sale';
+                productItem.appendChild(saleTag);
+            }
+
+            const addToCartButton = document.createElement('button');
+            addToCartButton.classList.add('add-to-cart');
+            addToCartButton.textContent = 'Add to cart';
+            productInfo.appendChild(addToCartButton);
+
+            productItem.appendChild(productInfo);
+            productsGrid.appendChild(productItem);
+        });
+    </script>
+</body>
+</html>

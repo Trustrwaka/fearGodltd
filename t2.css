@@ -1,0 +1,189 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 60;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.icons a {
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #666;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-images {
+  flex: 1;
+  margin-right: 20px;
+  top: 20px;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.main-image img {
+  max-width: 100%;
+  margin-left: 270px;
+  height: 200px;
+  width: 200px;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: -730px;
+    flex-direction: column;
+    margin-left: 180px;
+    
+}
+
+.thumbnails img {
+  max-width: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+.stars {
+  color: #ffc107;
+}
+
+.reviews {
+  color: #666;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.color-options,
+.size-options,
+.quantity {
+  margin: 10px 0;
+}
+
+.color-swatches {
+  display: flex;
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.swatch.selected {
+  border: 2px solid #333;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.add-to-cart,
+.favorite {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.favorite {
+  background-color: transparent;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: irem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 5000px;
+    margin:0 auto;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  height: 70px;
+}
+a{
+
+  color: aliceblue;
+}
